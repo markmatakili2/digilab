@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digilab Patient UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="logo.png" alt="Logo">
+        <a href="index.html" style="background-color: #e0f7fa; border-radius: 5px;">Dashboard</a>
+        <a href="booktest.html">Book Test</a>
+        <a href="ongoing.html">Ongoing Test</a>
+        <a href="results.html">My Results</a>
+        <a href="pataccnt.html">My Account</a>
+    </div>
+
+    <div class="main-content" id="main-content">
+        <div class="top-bar">
+            <i class="fas fa-bars"></i>
+            <h1>Digilab</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+        </div>
+
+        <h2>Top Tests</h2>
+        <div class="test-cards">
+            <div class="test-card">
+                <h3>Blood Test</h3>
+                <p>(Short description)</p>
+                <p>Price: (Amount)</p>
+            </div>
+            <div class="test-card">
+                <h3>Blood Test</h3>
+                <p>(Short description)</p>
+                <p>Price: (Amount)</p>
+            </div>
+            <div class="test-card">
+                <h3>Blood Test</h3>
+                <p>(Short description)</p>
+                <p>Price: (Amount)</p>
+            </div>
+            <div class="test-card">
+                <h3>Blood Test</h3>
+                <p>(Short description)</p>
+                <p>Price: (Amount)</p>
+            </div>
+            <div class="test-card">
+                <h3>Blood Test</h3>
+                <p>(Short description)</p>
+                <p>Price: (Amount)</p>
+            </div>
+            <div class="test-card">
+                <h3>Blood Test</h3>
+                <p>(Short description)</p>
+                <p>Price: (Amount)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Digilab. All rights reserved.</p>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('main-content');
+            if (sidebar.style.width === '250px') {
+                sidebar.style.width = '0';
+                mainContent.style.marginLeft = '0';
+            } else {
+                sidebar.style.width = '250px';
+                mainContent.style.marginLeft = '250px';
+            }
+        }
+    </script>
+</body>
+
+</html>
