@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background-color: #dff0d8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.user-icon {
+    font-size: 20px;
+    color: #333;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+}
+
+.test-info {
+    margin: 20px 0;
+}
+
+.test-info p {
+    margin: 5px 0;
+}
+
+.confirmation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.confirmation label {
+    margin-right: 10px;
+}
+
+.confirmation button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirmation button:hover {
+    background-color: #45a049;
+}
+
+.progress {
+    margin-top: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 20px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    width: 50%;
+    background-color: #4CAF50;
+    transition: width 0.5s;
+}
+
+.progress-timeline {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.test-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.test-table th,
+.test-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.test-table th {
+    background-color: #f2f2f2;
+}
+
+.results-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    .confirmation {
+        flex-direction: column;
+    }
+
+    .confirmation button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .progress-timeline {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress-timeline span {
+        margin-top: 5px;
+    }
+}

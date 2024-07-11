@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Lab Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo">
+            <span>LOGO</span>
+        </div>
+        <a href="my-account.html" class="account-link">
+            <img src="profile-icon.png" alt="Profile Icon">
+            <span>My Account</span>
+        </a>
+    </div>
+    <div class="main-container">
+        <div class="sidebar">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="verify-personnel.html">Verify personnel</a>
+            <a href="register-lab-centre.html">Register lab centre</a>
+            <a href="add-lab-test.html" class="active">Add lab test</a>
+            <a href="manage-payments.html">Manage payments</a>
+            <a href="delete-personnel.html">Delete personnel</a>
+            <a href="delete-lab-centre.html">Delete lab centre</a>
+            <a href="add-admin.html">Add admin</a>
+            <a href="../index.html">Log out</a>
+        </div>
+        <div class="content">
+            <h1>Add Lab Test</h1>
+            <div class="form-container">
+                <h2>Add Test Category</h2>
+                <form id="add-category-form">
+                    <label for="category">Enter Category:</label>
+                    <input type="text" id="category" name="category" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="form-container">
+                <h2>Add Test</h2>
+                <form id="add-test-form">
+                    <label for="test-name">Enter Test Name:</label>
+                    <input type="text" id="test-name" name="test-name" required>
+                    <label for="test-category">Select Category:</label>
+                    <select id="test-category" name="test-category" required></select>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Digilab. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -36,6 +36,10 @@
      border-radius: 50%;
  }
 
+ a {
+     text-decoration: none;
+ }
+
  .nav a.active {
      font-weight: bold;
      text-decoration: underline;
