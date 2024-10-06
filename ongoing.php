@@ -209,9 +209,9 @@
             <label for="confirm">Confirm</label>
             <input type="checkbox" id="confirm" name="confirm">
             <button type="submit">Submit</button>
-            <p>Digilab station: TUM diagnostic Lab</p>
-            <p>Sample arrival status: Pending</p>
-            <p>Test results: Pending</p>
+            <p>Digilab station: Makadara lab</p>
+            <p>Sample arrival status: (Yes/No)</p>
+            <p>Test results: (Ready/Pending)</p>
         </div>
 
         <div class="progress-bar-container">

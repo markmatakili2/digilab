@@ -26,7 +26,8 @@
         <div class="hero">
             <h1>Welcome to Digilab</h1>
             <p>Your one-stop solution for all lab test needs at the comfort of your home.</p>
-            <button><a href="home.html">Log in</a></button>
+            <button><a href="login.php">Log in</a></button>
+            <button><a href="signup.php">Register</a></button>
         </div>
     </div>
     <div id="about" class="section">
