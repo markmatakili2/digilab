@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digilab</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style/index.css">
 </head>
 
 <body>
     <div class="navbar">
         <div class="logo-container">
-            <img src="logo.png" alt="Logo">
+            <img src="images/logo.png" alt="Logo">
             <span><b>DIGILAB</b></span>
         </div>
         <nav>
@@ -46,7 +46,7 @@
     </div>
     <div id="personnel" class="section">
         <h2>Personnel</h2>
-        <p>Are you a lab personnel and would like to join us? please <button><a href="./personnel/dashboard.html">log
+        <p>Are you a lab personnel and would like to join us? please <button><a href="./personnel/lab_login.php">log
                     in</a></button> to
             access your
             profile and manage your

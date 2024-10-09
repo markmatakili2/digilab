@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digilab - Ongoing Tests</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo">
+            <span>LOGO</span>
+        </div>
+        <nav>
+            <a href="#">Dashboard</a>
+            <a href="digilab.php">Digilab</a>
+            <a href="ongoing-tests.php">Ongoing Tests</a>
+            <a href="update-results.php">Update Results</a>
+            <a href="completed-tests.php">Completed</a>
+            <a href="my-account.php">My Account</a>
+            <a href="../index.php">Log out</a>
+        </nav>
+    </div>
+    <div class="content">
+        <h2>Track the progress you’re making.</h2>
+        <div class="test-info">
+            <p><strong>Test type:</strong> Blood test</p>
+            <p><strong>Test id:</strong> 98765</p>
+            <p><strong>Patient name:</strong> John Doe</p>
+            <p><strong>Contacts:</strong> +254712345678</p>
+            <p><strong>Sample collected:</strong> (Pending/approved)</p>
+            <p><strong>Digilab centre:</strong> TUM lab centre</p>
+            <p><strong>Scheduled test time:</strong> 1400hrs</p>
+            <p><strong>Test results:</strong> Click the checkbox to confirm.</p>
+            <div class="confirmation">
+                <label for="confirm">Confirm</label>
+                <input type="checkbox" id="confirm">
+                <button onclick="confirmTest()">Submit</button>
+            </div>
+        </div>
+        <div class="progress">
+            <p><strong>Progress bar:</strong></p>
+            <div class="progress-bar">
+                <div class="progress-bar-fill" id="progress-bar-fill"></div>
+            </div>
+            <div class="progress-timeline">
+                <span>Today, 0900Hrs</span>
+                <span>1100Hrs</span>
+                <span>1400Hrs</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

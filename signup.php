@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'db.php';
+require './connect/db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fname = $_POST['fname'];
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style/style2.css">
 </head>
 
 <body>

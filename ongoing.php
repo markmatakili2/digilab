@@ -190,12 +190,12 @@
 <body>
     <div class="navbar">
         <img src="logo.png" alt="Logo">
-        <a href="home.html">Dashboard</a>
-        <a href="booktest.html">Book Test</a>
+        <a href="home.php">Dashboard</a>
+        <a href="booktest.php">Book Test</a>
         <a href="#" style="background-color: #e0f7fa; border-radius: 5px;">Ongoing Test</a>
-        <a href="results.html">My Results</a>
-        <a href="pataccnt.html">My Account</a>
-        <a href="index.html">Log out</a>
+        <a href="results.php">My Results</a>
+        <a href="pataccnt.php">My Account</a>
+        <a href="index.php">Log out</a>
     </div>
 
     <div class="content">

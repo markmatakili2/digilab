@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digilab - My Account</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -27,8 +28,9 @@
             <div class="account-actions">
                 <button>Personal Information</button>
                 <button>Account Settings</button>
+                <button>Verification</button>
                 <button>Delete Account</button>
-                <button><a href="index.html">Log out</a></button>
+                <button><a href="../index.html">Log out</a></button>
             </div>
             <div class="profile-details">
                 <p><strong>Name:</strong> John Doe</p>

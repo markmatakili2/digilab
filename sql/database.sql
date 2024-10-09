@@ -45,9 +45,11 @@ CREATE TABLE lab_tests (
     test_name VARCHAR(100) NOT NULL,
     category_id INT,
     description TEXT,
+    price DECIMAL(10, 2) NOT NULL, -- New price column
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (category_id) REFERENCES test_categories(id) ON DELETE CASCADE
 );
+
 
 -- Lab centers registered on the platform.
 CREATE TABLE lab_centers (
@@ -129,4 +131,14 @@ CREATE TABLE audit_logs (
     description TEXT,
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+CREATE TABLE requests (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    lab_test_id INT NOT NULL,
+    contact_number VARCHAR(15) NOT NULL,
+    request_date DATE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (lab_test_id) REFERENCES lab_tests(id) ON DELETE CASCADE
 );
